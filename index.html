@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Favour Famous | Portfolio</title>
 
 <style>
@@ -14,32 +15,94 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
-font-family:Arial, sans-serif;
-background:#f5f7fb;
+font-family:Arial,sans-serif;
+background:#f4f7fb;
 color:#333;
-line-height:1.6;
+}
+
+nav{
+background:#0A66C2;
+padding:18px;
+display:flex;
+justify-content:center;
+gap:35px;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
 }
 
 header{
 background:linear-gradient(135deg,#0A66C2,#004182);
 color:white;
 text-align:center;
-padding:60px 20px;
+padding:70px 20px;
 }
 
 .profile-photo{
 width:180px;
 height:180px;
 border-radius:50%;
-object-fit:cover;
 border:5px solid white;
+object-fit:cover;
 margin-bottom:20px;
 }
 
 h1{
-font-size:42px;
-margin-bottom:10px;
+font-size:45px;
+margin-bottom:15px;
+}
+
+.subtitle{
+font-size:24px;
+margin-bottom:20px;
+}
+
+.description{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.button{
+display:inline-block;
+padding:15px 35px;
+background:white;
+color:#0A66C2;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+}
+
+.button:hover{
+background:#eef5ff;
+}
+
+section{
+max-width:1000px;
+margin:70px auto;
+padding:0 20px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
 }
 
 h2{
@@ -47,50 +110,12 @@ color:#0A66C2;
 margin-bottom:20px;
 }
 
-.subtitle{
-font-size:22px;
-margin-bottom:20px;
-}
-
-.description{
-max-width:700px;
-margin:auto;
-margin-bottom:30px;
-}
-
-.button{
-display:inline-block;
-padding:14px 30px;
-background:white;
-color:#0A66C2;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-}
-
-.button:hover{
-background:#e8f0ff;
-}
-
-section{
-max-width:900px;
-margin:50px auto;
-padding:0 20px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
 footer{
 background:#0A66C2;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:50px;
+margin-top:60px;
 }
 
 </style>
@@ -98,6 +123,18 @@ margin-top:50px;
 </head>
 
 <body>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#experience">Experience</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
 
 <header>
 
@@ -114,21 +151,21 @@ Helping businesses deliver exceptional customer experiences through customer sup
 </p>
 
 <a class="button"
-href="https://linkedin.com/in/YOUR-LINK"
+href="YOUR LINKEDIN URL"
 target="_blank">
 Visit My LinkedIn
 </a>
 
 </header>
 
-<section>
+<section id="about">
 
 <div class="card">
 
 <h2>About Me</h2>
 
 <p>
-I am a Communications and Customer Support Professional with experience in customer support, virtual assistance, administrative support and digital communications. I enjoy helping businesses improve customer satisfaction while providing efficient administrative support.
+I am a Communications and Customer Support Professional passionate about helping businesses provide excellent customer experiences through customer support, administrative support, virtual assistance and digital communication.
 </p>
 
 </div>
